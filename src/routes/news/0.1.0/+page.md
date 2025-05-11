@@ -1,6 +1,6 @@
 ---
 title: Version 0.1.0
-release: "2025-05-11"
+date: "2025-05-11"
 updated: "2025-05-11"
 excerpt: MVP is finally here!
 author: Okin
