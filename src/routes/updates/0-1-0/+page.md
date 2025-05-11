@@ -7,6 +7,8 @@ author: Okin
 hidden: false
 ---
 
+[Go Home](/)
+
 0.1.0 - MVP is finally here!
 
 🚀 Major Milestone: MVP Release! 🚀

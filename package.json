@@ -29,5 +29,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@sveltejs/adapter-static": "^3.0.8"
 	}
 }
