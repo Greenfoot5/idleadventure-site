@@ -26,9 +26,7 @@ const config = {
 		adapter: adapter(),
 		prerender : {
 			handleHttpError: "warn",
-			entries: [
-				// Add any hidden news posts here
-			]
+			// entries: [ // Add any hidden news posts here ]
 		}
 	},
 };
