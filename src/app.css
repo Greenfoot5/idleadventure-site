@@ -5,3 +5,12 @@
 @import '@skeletonlabs/skeleton/themes/rocket';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+:is(h1, h2, h3, h4, h5, h6)
+{
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+}
