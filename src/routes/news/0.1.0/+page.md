@@ -1,17 +1,13 @@
 ---
-title: Version 0.1.0
+title: Version 0.1.0 - MVP is finally here!
 date: "2025-05-11"
 updated: "2025-05-11"
-excerpt: MVP is finally here!
+excerpt: We’ve officially hit a big one — the base gameplay loop is complete!
 author: Okin
 hidden: false
 ---
 
-[Go Home](/)
-
-0.1.0 - MVP is finally here!
-
-🚀 Major Milestone: MVP Release! 🚀
+## 🚀 Major Milestone: MVP Release! 🚀
 
 We’ve officially hit a big one — the base gameplay loop is complete! 🎉 From this point forward, we’ll be building new features and expanding the existing systems on top of this foundation.
 Thanks so much for being here with us — we couldn’t have done it without you. 💚

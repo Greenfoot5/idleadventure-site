@@ -9,12 +9,12 @@
 
 
 <header>
-    <div class="grid grid-rows-2 justify-items-center w-full bg-surface-100-900 py-6">
+    <div class="hidden md:grid grid-rows-2 justify-items-center w-full bg-surface-100-900 py-6">
         <a href="/" class="site-title">
             <h1 class="h1">{siteTitle}</h1>
         </a>
 
-        <div class="hidden md:flex divide-primary-300-700/50 divide-x-2 h6">
+        <div class="flex divide-primary-300-700/50 divide-x-2 md:h6">
             {#each navItems as item}
                     <a class="px-8 my-4 anchor"
                             href={item.route}
@@ -26,6 +26,14 @@
                     </a>
             {/each}
         </div>
+    </div>
+
+    <div class="md:hidden justify-items-center w-full bg-surface-100-900 py-6">
+        <h1 class="h1">
+            <a href="/" class="site-title">
+                {siteTitle}
+            </a>
+        </h1>
     </div>
 
     <HamburgerMenuButton />

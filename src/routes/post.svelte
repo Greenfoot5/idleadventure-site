@@ -52,7 +52,9 @@
     </div>
 
     <!--	<svelte:component this={PostContent} />-->
-    {@render children?.()}
+    <div class="prose max-w-none dark:prose-invert">
+        {@render children?.()}
+    </div>
 </article>
 
 <style lang="css">
