@@ -13,8 +13,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-      - run: npm install
-      - run: npm run build
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.1.0
+      - run: pnpm install
+      - run: pnpm run build
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
