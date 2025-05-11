@@ -27,7 +27,7 @@ const config = {
 		prerender : {
 			handleHttpError: "warn",
 			entries: [
-				'/updates/0-1-0'
+				'/updates/0.1.0'
 			]
 		}
 	},
