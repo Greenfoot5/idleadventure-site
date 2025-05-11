@@ -1,8 +1,8 @@
 ---
-title: Version 1.3
+title: Version 0.1.0
 release: "2025-05-11"
 updated: "2025-05-11"
-except: MVP is finally here!
+excerpt: MVP is finally here!
 author: Okin
 hidden: false
 ---
