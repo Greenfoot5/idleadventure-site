@@ -10,6 +10,7 @@
         coverAlt,
         coverWidth,
         coverHeight,
+        cardColor,
         children
     } = $props();
 </script>
