@@ -1,6 +1,6 @@
 ---
 title: Version 0.1.1 - Hotfix
-date: "2025-05-10T21:00:00"
+date: "2025-05-10T21:00"
 updated: "2025-05-12"
 excerpt: Fixes resetting profiles and freezing timer.
 author: Okin
