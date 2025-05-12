@@ -1,6 +1,6 @@
 ---
 title: Version 0.1.0 - MVP is finally here!
-date: "2025-05-10"
+date: "2025-05-10T19:3:00"
 updated: "2025-05-12"
 excerpt: We’ve officially hit a big one — the base gameplay loop is complete!
 author: Okin
