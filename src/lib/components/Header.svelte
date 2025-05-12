@@ -14,7 +14,7 @@
             <h1 class="h1">{siteTitle}</h1>
         </a>
 
-        <div class="flex divide-primary-300-700/50 divide-x-2 md:h6">
+        <div class="flex divide-primary-300-700/60 divide-x-2 md:h6">
             {#each navItems as item}
                     <a class="px-8 my-4 anchor"
                             href={item.route}
