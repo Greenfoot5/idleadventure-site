@@ -27,9 +27,10 @@
 
                         <div class="meta">
                             <b>Author:</b> {post.author}
+                            <b>Date: </b> {new Date(post.date).toLocaleDateString()}
                         </div>
 
-                        <p>{post.excerpt}</p>
+                        <p class="opacity-60">{post.excerpt}</p>
                     </article>
                 {:else}
                     <article class="col-span-3">
@@ -37,11 +38,12 @@
                             {post.title}
                         </h2>
 
-                        <div class="meta">
-                            <b>Author:</b> {post.author}
+                        <div class="meta space-x-8">
+                            <span><b>Author:</b> {post.author}</span>
+                            <span><b>Date: </b> {new Date(post.date).toLocaleDateString()}</span>
                         </div>
 
-                        <p>{post.excerpt}</p>
+                        <p class="opacity-80">{post.excerpt}</p>
                     </article>
                 {/if}
             </a>
@@ -49,20 +51,5 @@
     {/each}
 </ul>
 
-<p class="hidden added"></p>
-
-<style>
-    @reference "tailwindcss";
-    @reference '@skeletonlabs/skeleton';
-    @reference '@skeletonlabs/skeleton/themes/rocket';
-    @reference '@skeletonlabs/skeleton/optional/presets';
-
-    .added {
-        @apply preset-filled-primary-500;
-        @apply preset-filled-secondary-500;
-        @apply preset-filled-tertiary-500;
-        @apply preset-filled-success-500;
-        @apply preset-filled-warning-500;
-        @apply preset-filled-error-500;
-    }
-</style>
+<p class="hidden preset-filled-primary-500 preset-filled-secondary-500 preset-filled-tertiary-500
+preset-filled-success-500 preset-filled-warning-500 preset-filled-error-500 preset-filled-surface-500">Hello there!</p>
