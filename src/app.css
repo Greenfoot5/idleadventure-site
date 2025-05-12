@@ -5,7 +5,6 @@
 @import '@skeletonlabs/skeleton/themes/rocket';
 
 @plugin "@tailwindcss/typography";
-@config "../tailwind.config.js";
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
@@ -22,23 +21,15 @@ body {
 /* Components: Typography */
 
 .post {
-    color: var(--color-surface-950-50);
     font-family: system-ui, sans-serif;
     line-height: inherit;
     font-weight: normal;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: 0;
 }
 
 .post h1 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-4xl);
-    line-height: var(--text-4xl--line-height);
+    @apply h1;
 
     @variant md {
         font-size: var(--text-5xl);
@@ -50,14 +41,7 @@ body {
 }
 
 .post h2 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-3xl);
-    line-height: var(--text-3xl--line-height);
+    @apply h2;
 
     @variant md {
         font-size: var(--text-4xl);
@@ -69,14 +53,7 @@ body {
 }
 
 .post h3 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-2xl);
-    line-height: var(--text-2xl--line-height);
+    @apply h3;
 
     @variant md {
         font-size: var(--text-3xl);
@@ -88,14 +65,7 @@ body {
 }
 
 .post h4 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-xl);
-    line-height: var(--text-xl--line-height);
+    @apply h4;
 
     @variant md {
         font-size: var(--text-2xl);
@@ -108,14 +78,7 @@ body {
 }
 
 .post h5 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-lg);
-    line-height: var(--text-lg--line-height);
+    @apply h5;
 
     @variant md {
         font-size: var(--text-xl);
@@ -127,14 +90,7 @@ body {
 }
 
 .post h6 {
-    color: var(--heading-font-color);
-    font-family: var(--heading-font-family);
-    font-weight: var(--heading-font-weight);
-    font-style: var(--heading-font-style);
-    letter-spacing: var(--heading-letter-spacing);
-
-    font-size: var(--text-base);
-    line-height: var(--text-base--line-height);
+    @apply h6;
 
     @variant md {
         font-size: var(--text-lg);
@@ -145,15 +101,8 @@ body {
     }
 }
 
-.post anchor {
-    color: var(--anchor-font-color);
-    font-family: var(--anchor-font-family);
-    font-size: var(--anchor-font-size);
-    line-height: var(--anchor-line-height);
-    font-weight: var(--anchor-font-weight);
-    font-style: var(--anchor-font-style);
-    letter-spacing: var(--anchor-letter-spacing);
-    text-decoration: var(--anchor-text-decoration);
+.post a {
+    @apply anchor;
 
     @variant hover {
         text-decoration: var(--anchor-text-decoration-hover);
@@ -169,49 +118,41 @@ body {
     }
 }
 
+.post strong {
+    color: inherit;
+    @apply font-bold;
+}
+
 .post blockquote {
-    border-left-width: 3px;
-    border-left-color: var(--color-primary-500);
-    padding-left: --spacing(4);
-    font-style: italic;
+    color: inherit;
+    @apply blockquote;
+}
+
+.post ::marker {
+    color: inherit;
 }
 
 .post kbd {
-    background-color: var(--color-surface-300-700);
-    border-width: 1px;
-    border-color: var(--color-surface-600-400);
-    border-radius: var(--radius-base);
-    color: var(--color-surface-contrast-500);
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
-    white-space: nowrap;
-    overflow-x: auto;
-    padding-inline: --spacing(1.5);
-    padding-block: --spacing(0.25);
+    @apply kbd;
 }
 
 .post pre {
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(var(--blur-sm));
-    border-radius: var(--radius-container);
-    color: var(--color-white);
-    font-size: var(--text-xs);
-    white-space: pre-wrap;
-    padding: --spacing(4);
-    overflow-x: auto;
+    @apply pre;
 }
 
 .post code {
-    &:not(pre &, .ec-line &) {
-        background-color: var(--color-primary-100-900);
-        border-radius: var(--radius-base);
-        color: var(--color-primary-contrast-50-950);
-        font-family: var(--font-mono);
-        font-size: var(--text-xs);
-        white-space: nowrap;
-        padding-inline: --spacing(1.5);
-        padding-block: --spacing(0.75);
-        overflow-x: auto;
+    @apply code;
+}
+
+/* Prevent ` being shown around code */
+.prose {
+    & :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before
+    {
+        content: '';
+    }
+    & :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after
+    {
+        content: '';
     }
 }
 
@@ -220,48 +161,57 @@ body {
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del */
 
 .post ins {
-    background-color: var(--color-success-500);
-    color: var(--color-success-contrast-500);
-    font-family: var(--font-mono);
-    position: relative;
-    display: block;
-    padding: --spacing(0.5);
-    padding-left: --spacing(5);
-    text-decoration: none;
-
-    &::before {
-        position: absolute;
-        left: --spacing(1);
-        font-family: var(--font-mono);
-    }
-    &::before {
-        content: '+';
-    }
+    @apply ins;
 }
 
 .post del {
-    background-color: var(--color-error-500);
-    color: var(--color-error-contrast-500);
-    font-family: var(--font-mono);
-    position: relative;
-    display: block;
-    padding: --spacing(0.5);
-    padding-left: --spacing(5);
-    text-decoration: none;
-
-    &::before {
-        position: absolute;
-        left: --spacing(1);
-        font-family: var(--font-mono);
-    }
-    &::before {
-        content: '−';
-    }
+    @apply del
 }
 
 .post mark {
-    color: var(--color-tertiary-contrast-500);
-    background-color: var(--color-tertiary-500);
-    border-radius: var(--radius-sm);
-    padding-inline: --spacing(1);
+    @apply mark;
+}
+
+.post th {
+    color: inherit;
+    @apply text-xl;
+    padding-left: 0;
+}
+.post th[align="left"] {
+    text-align: left;
+}
+.post th[align="center"] {
+    text-align: center;
+}
+.post th[align="right"] {
+    text-align: right;
+}
+
+.post td {
+    padding-left: 0;
+}
+.post td[align="left"] {
+    text-align: left;
+}
+.post td[align="center"] {
+    text-align: center;
+}
+.post td[align="right"] {
+    text-align: right;
+}
+
+.prose {
+    & :where(th, td):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+        text-align: inherit;
+    }
+}
+
+.post dt {
+    color: inherit;
+}
+
+.post dd {
+    margin-top: 0;
+    padding-inline-start: 0;
+    opacity: 60%;
 }

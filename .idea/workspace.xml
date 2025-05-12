@@ -4,31 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63cfd62a-5388-4321-8055-f9bdda095c8a" name="Changes" comment="" />
+    <list default="true" id="63cfd62a-5388-4321-8055-f9bdda095c8a" name="Changes" comment="Implemented tailwindcss typography plugin&#10;&#10;It still needs work and customisation, especially colour wise">
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/news/0.1.0/+page.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/news/0.1.0/+page.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/post.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/post.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="workflow" />
+        <option value="post" />
+        <option value="Header" />
+        <option value="HamburgerMenuButton" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Greenfoot5"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Greenfoot5&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Greenfoot5/idleadventure-site.git",
-    "accountId": "6437789d-64e7-4b4a-8b84-fd46220ec52c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Greenfoot5/idleadventure-site.git&quot;,
+    &quot;accountId&quot;: &quot;6437789d-64e7-4b4a-8b84-fd46220ec52c&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2wxKiVaCNNwQkqzMICoS4tgGeRc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,9 +62,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/harvey/Developer/Alchemix/IdleAdventure/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,10 +86,206 @@
       <option name="presentableId" value="Default" />
       <updated>1746977911846</updated>
       <workItem from="1746977913204" duration="491000" />
+      <workItem from="1746978407153" duration="19601000" />
     </task>
+    <task id="LOCAL-00001" summary="Setup skeleton.dev">
+      <option name="closed" value="true" />
+      <created>1746978802492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746978802492</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added gh pages run">
+      <option name="closed" value="true" />
+      <created>1746978841721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746978841721</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Setup .idea">
+      <option name="closed" value="true" />
+      <created>1746978846004</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746978846004</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added title">
+      <option name="closed" value="true" />
+      <created>1746979124253</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746979124253</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Setup some more basics">
+      <option name="closed" value="true" />
+      <created>1746980061947</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746980061947</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Setup basic rendering">
+      <option name="closed" value="true" />
+      <created>1746981409590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746981409590</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Utilise pnpm in Github actions">
+      <option name="closed" value="true" />
+      <created>1746981495095</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746981495095</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed fontmatter for 0-1-0">
+      <option name="closed" value="true" />
+      <created>1746981609007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746981609007</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Repath from 0-1-0 to 0.1.0">
+      <option name="closed" value="true" />
+      <created>1746981652135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746981652135</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add pnpm version">
+      <option name="closed" value="true" />
+      <created>1746982028871</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746982028871</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updates/ to news/">
+      <option name="closed" value="true" />
+      <created>1746983555299</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983555299</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added basic homepage with test links">
+      <option name="closed" value="true" />
+      <created>1746983571954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983571954</updated>
+    </task>
+    <task id="LOCAL-00013" summary="We don't need to prerender 0.1.0">
+      <option name="closed" value="true" />
+      <created>1746983653728</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983653728</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added Discord page">
+      <option name="closed" value="true" />
+      <created>1746983660666</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983660666</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implement rss feed">
+      <option name="closed" value="true" />
+      <created>1746983670841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983670841</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed no site content">
+      <option name="closed" value="true" />
+      <created>1746983880242</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983880242</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix 0.1.0 date">
+      <option name="closed" value="true" />
+      <created>1746989160651</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746989160651</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added a header">
+      <option name="closed" value="true" />
+      <created>1746997770979</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746997770979</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Only make build when pushing to main">
+      <option name="closed" value="true" />
+      <created>1746997829725</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746997829725</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Implemented tailwindcss typography plugin&#10;&#10;It still needs work and customisation, especially colour wise">
+      <option name="closed" value="true" />
+      <created>1747000406855</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1747000406855</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Setup skeleton.dev" />
+    <MESSAGE value="Added gh pages run" />
+    <MESSAGE value="Setup .idea" />
+    <MESSAGE value="Added title" />
+    <MESSAGE value="Setup some more basics" />
+    <MESSAGE value="Setup basic rendering" />
+    <MESSAGE value="Utilise pnpm in Github actions" />
+    <MESSAGE value="Fixed fontmatter for 0-1-0" />
+    <MESSAGE value="Repath from 0-1-0 to 0.1.0" />
+    <MESSAGE value="Add pnpm version" />
+    <MESSAGE value="updates/ to news/" />
+    <MESSAGE value="Added basic homepage with test links" />
+    <MESSAGE value="We don't need to prerender 0.1.0" />
+    <MESSAGE value="Added Discord page" />
+    <MESSAGE value="Implement rss feed" />
+    <MESSAGE value="Fixed no site content" />
+    <MESSAGE value="fix 0.1.0 date" />
+    <MESSAGE value="Added a header" />
+    <MESSAGE value="Only make build when pushing to main" />
+    <MESSAGE value="Implemented tailwindcss typography plugin&#10;&#10;It still needs work and customisation, especially colour wise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented tailwindcss typography plugin&#10;&#10;It still needs work and customisation, especially colour wise" />
   </component>
 </project>

@@ -58,5 +58,4 @@
             font-weight: bold;
         }
     }
-
 </style>

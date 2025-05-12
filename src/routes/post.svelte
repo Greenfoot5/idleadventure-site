@@ -33,7 +33,7 @@
 <article class="post">
     <!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
     <img
-            class="cover-image"
+            class="cover-image mt-8"
             src="{coverImage}"
             alt="{coverAlt}"
             style="aspect-ratio: {coverWidth} / {coverHeight};"
@@ -41,9 +41,9 @@
             height={coverHeight}
     />
 
-    <h1>{ title }</h1>
+    <h1 class="h1 mb-4 mt-4">{ title }</h1>
 
-    <div class="meta">
+    <div class="meta text-sm mb-8">
         <b>Author:</b> {author}
         <br>
         <b>Published:</b> {date}
@@ -52,25 +52,17 @@
     </div>
 
     <!--	<svelte:component this={PostContent} />-->
-    <div class="prose max-w-none dark:prose-invert">
+    <div class="prose max-w-none content">
         {@render children?.()}
     </div>
 </article>
 
 <style lang="css">
-    /**	Apparently scss doesn't work here with mdsvex so it needs to be css... **/
+    @reference "tailwindcss";
+    @reference "@skeletonlabs/skeleton";
+    @reference "@skeletonlabs/skeleton/themes/rocket";
 
-    .post {
-        color: inherit;
-    }
-    .post h1 {
-        margin-bottom: 1rem;
-    }
-    .post .meta {
-        font-size: 0.8rem;
-        margin-bottom: 4rem;
-    }
-    .post img + h1 {
-        margin-top: 1rem;
+    .content {
+        @apply text-surface-950-50;
     }
 </style>
