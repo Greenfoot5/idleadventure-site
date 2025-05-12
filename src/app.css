@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @import '@skeletonlabs/skeleton';
-@import '@skeletonlabs/skeleton/optional/presets';
 @import '@skeletonlabs/skeleton/themes/rocket';
+@import '@skeletonlabs/skeleton/optional/presets';
 
 @plugin "@tailwindcss/typography";
 
@@ -172,10 +172,12 @@ body {
     @apply mark;
 }
 
+.post table {
+    @apply table;
+}
+
 .post th {
     color: inherit;
-    @apply text-xl;
-    padding-left: 0;
 }
 .post th[align="left"] {
     text-align: left;
@@ -186,10 +188,6 @@ body {
 .post th[align="right"] {
     text-align: right;
 }
-
-.post td {
-    padding-left: 0;
-}
 .post td[align="left"] {
     text-align: left;
 }
@@ -198,12 +196,6 @@ body {
 }
 .post td[align="right"] {
     text-align: right;
-}
-
-.prose {
-    & :where(th, td):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-        text-align: inherit;
-    }
 }
 
 .post dt {
