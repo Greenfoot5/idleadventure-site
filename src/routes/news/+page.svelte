@@ -6,13 +6,11 @@
 </script>
 
 <svelte:head>
-    <svelte:head>
-        <!-- Be sure to add your image files and un-comment the lines below -->
-        <meta data-key="description" name="description" content="Get the very latest, and the very oldest on Idle Adventure!">
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Idle Adventure News" />
-        <meta property="og:description" content="Get the very latest, and the very oldest on Idle Adventure!" />
-    </svelte:head>
+    <!-- Be sure to add your image files and un-comment the lines below -->
+    <meta data-key="description" name="description" content="Get the very latest, and the very oldest on Idle Adventure!">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Idle Adventure News" />
+    <meta property="og:description" content="Get the very latest, and the very oldest on Idle Adventure!" />
 </svelte:head>
 
 <ul>
