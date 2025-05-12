@@ -47,9 +47,9 @@
     <div class="meta text-sm mb-8">
         <b>Author:</b> {author}
         <br>
-        <b>Published:</b> {date}
+        <b>Published:</b> {new Date(date).toLocaleDateString()}
         <br>
-        <b>Updated:</b> {updated}
+        <b>Updated:</b> {new Date(updated).toLocaleDateString()}
     </div>
 
     <!--	<svelte:component this={PostContent} />-->
