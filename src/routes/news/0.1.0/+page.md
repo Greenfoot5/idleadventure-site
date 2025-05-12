@@ -5,7 +5,6 @@ updated: "2025-05-12"
 excerpt: We’ve officially hit a big one — the base gameplay loop is complete!
 author: Okin
 hidden: false
-coverImage: "favicon.png"
 cardColor: primary
 ---
 
