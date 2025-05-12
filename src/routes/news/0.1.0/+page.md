@@ -5,25 +5,25 @@ updated: "2025-05-12"
 excerpt: We’ve officially hit a big one — the base gameplay loop is complete!
 author: Okin
 hidden: false
+coverImage: "favicon.png"
+cardColor: primary
 ---
 
 ## 🚀 Major Milestone: MVP Release! 🚀
 
-1. We’ve officially hit a big one — **the base gameplay loop is complete!** 🎉
-2. From this point forward, we’ll be building **new features** and **expanding the existing systems** on top of this foundation.
-3. Thanks so much for being here with us — we couldn’t have done it without you. 💚
+We’ve officially hit a big one — **the base gameplay loop is complete!** 🎉
+From this point forward, we’ll be building **new features** and **expanding the existing systems** on top of this foundation.
+Thanks so much for being here with us — we couldn’t have done it without you. 💚
 
-- This is a __mandatory update__, and your game __will restart from the beginning__.
-- Progress will reset as we roll out the rebalanced and finalized experience.
-
-
+This is a __mandatory update__, and your game __will restart from the beginning__.
+Progress will reset as we roll out the rebalanced and finalized experience.
 
 ---
 
 ### 🌟 MVP Changelog 🌟
 
 #### 🔹 Tutorial System
-Added a dynamic tutorial that *introduces* new elements right when they become relevant.
+Added a dynamic tutorial that introduces new elements right when they become relevant.
 
 #### 🔹 World Rebalancing
 Adjusted difficulty and progression across multiple worlds for a smoother experience.
@@ -32,7 +32,7 @@ Adjusted difficulty and progression across multiple worlds for a smoother experi
 Refined and updated a bunch of in-game text for better clarity and polish.
 
 #### 🔹 General Improvements
-Lots of tweaks and love poured into the `tutorial` and overall MVP version.
+Lots of tweaks and love poured into the tutorial and overall MVP version.
 
 ---
 
