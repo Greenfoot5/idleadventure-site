@@ -32,7 +32,7 @@
                         <p>{post.excerpt}</p>
                     </article>
                 {:else}
-                    <article>
+                    <article class="col-span-3">
                         <h2 class="h2">
                             {post.title}
                         </h2>
